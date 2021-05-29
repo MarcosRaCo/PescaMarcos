@@ -18,8 +18,14 @@ public class Pesca_Marcos_Rabadan {
         System.out.print(mensaje);
     }
 
+
     public static void main(String[] args) throws Exception {
-        new Usuarios();
-        //String path = "src\\usuarios.txt";
+        Usuarios u = new Usuarios();
+        String path = "user.txt";
+        //  System.out.println(u.leer(path, 2 , "mig"));
+        // u.eliminarUsuario(path, 2 , "pep");
+
+        u.eliminarUsuario(path, 2 , "pep");
+        u.registrarUsuario(path, 2, "juli");
     }
 }

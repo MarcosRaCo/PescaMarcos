@@ -61,10 +61,10 @@ public class Peces {
     }
 
     public static void main(String[] args) {
-        new DecimalFormat("0.00");
-        double r = Math.random() * 1.0D;
-        double redondeado = (double)Math.round(r * 100.0D) / 100.0D;
-        System.out.println(redondeado);
+//        new DecimalFormat("0.00");
+//        double r = Math.random() * 1.0D;
+//        double redondeado = (double)Math.round(r * 100.0D) / 100.0D;
+//        System.out.println(redondeado);
     }
 }
 
