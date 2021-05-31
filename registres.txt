@@ -1,5 +1,12 @@
-#Sargo chopa#marcos#0.85#2021-05-30#
-#Sargo chopa#marcos#0.95#2021-05-30#
+#Anfós#marcos#0.85#2021-05-30#
 #Corocoro#marcos#0.38#2021-05-30#
+#Anfós#marcos#12.00#2021-05-30#
+#Serrà#marcos#0.90#2021-05-30#
 #Pargo criollo#marcos#1.78#2021-05-30#
+#Sargo chopa#marcos#0.95#2021-05-30#
+#Anfós#marcos#1.99#2021-05-30#
 #Dènton#marcos#1.66#2021-05-30#
+#Anfós#marcos#1.66#2021-05-30#
+#Serrà#marcos#0.13#2021-05-30#
+#Anfós#marcos#70.66#2021-05-30#
+#Serrà#marcos#20.00#2021-05-30#
