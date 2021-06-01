@@ -135,36 +135,6 @@ public class Pescar {
         return contadorHstg;
     }
 
-    public int buscarLinea(String path, int limite) throws Exception{
-        fr = new FileReader(path);
-        int contadorLinea = 0;
-        int contadorHstg = 0;
-        String pez = "";
-        String str = "";
-        int c = fr.read();
-        while(c != -1){
-            str += (char)c;
-            if (c == '#') {
-                contadorHstg++;
-            }
-            if (contadorHstg == 1 && contadorLinea == 2) {
-                if (str.startsWith("#")) {
-                    str = "";
-                }
-                return contadorLinea;
-            }
-            if (contadorHstg == limite) {
-                contadorLinea++;
-                contadorHstg = 0;
-            }
-            c = fr.read();
-        }
-        fr.close();
-        System.out.println(pez);
-        return -1;
-
-    }
-
     public int obtenerPorcentajeRandom(String path, int limite, int linea, int objetivoHtg) throws Exception {
         double random = Math.random();
         for (int i = 0; i < contarLineas(path, limite) ; i++) {
@@ -241,16 +211,9 @@ public class Pescar {
     }
 
     public void mostrarEstadisticasGenerales(String path) throws Exception {
-
         int linea = 0;
-        int linea3 = 0;
-        int con2 = 0;
         String pez = "";
-        String pez2 = "";
-        double peso = 0;
-        double d = 0;
         int hstgNombrePez = 1;
-        int hstgProbabilidad = 2;
         for (int i = 0; i < contarLineas(path, 5); i++) {
             pez = leer(path, 5, linea, hstgNombrePez);
             int linea2 = 0;
@@ -268,7 +231,32 @@ public class Pescar {
                 System.out.println(pez + pesoMax);
             }
         }
+    }public void mostrarEstadisticasUsuarios(String path, String usuarios) throws Exception {
+        int linea = 0;
+        String pez = "";
+        int hstgNombrePez = 1;
+        int hstgNombreUsuario = 2;
+        for (int i = 0; i < contarLineas(path, 5); i++) {
+            pez = leer(path, 5, linea, hstgNombrePez);
+            int linea2 = 0;
+            double pesoMax = 0;
+            for (int j = 0; j < contarLineas(path, 5); j++) {
+                if (usuarios.equals(leer(path, 5, linea2, hstgNombreUsuario))) {
+                    if (pez.equals(leer(path, 5, linea2, hstgNombrePez))) {
+                        if (Double.parseDouble(leer(path, 5, linea2, 3)) > pesoMax) {
+                            pesoMax = Double.parseDouble(leer(path, 5, linea2, 3));
+                        }
+                    }
+
+                }linea2++;
+            }
+            linea++;
+            if (pesoMax > 0) {
+                System.out.println(pez + " con un peso maximo de " + pesoMax + " por " + usuarios);
+            }
+        }
     }
+
     public void menu() throws Exception {
         boolean bucle = true;
         while (bucle){
@@ -355,7 +343,11 @@ public class Pescar {
                         }
                         break;
                     case 4:
-
+                        Scanner scUsuario = new Scanner(System.in);
+                        System.out.print("Usuario: ");
+                        String opcionUsuarioEstadistica = scUsuario.nextLine();
+                        identificacion(pathUsuarios,2, opcionUsuarioEstadistica);
+                        mostrarEstadisticasUsuarios(pathRegistros, "pepe");
                         break;
                     case 5:
                         mostrarEstadisticasGenerales(pathRegistros);
