@@ -1,12 +1,11 @@
-#Anfós#marcos#0.85#2021-05-30#
-#Corocoro#marcos#0.38#2021-05-30#
-#Anfós#marcos#12.00#2021-05-30#
-#Serrà#marcos#0.90#2021-05-30#
-#Pargo criollo#marcos#1.78#2021-05-30#
-#Sargo chopa#marcos#0.95#2021-05-30#
-#Anfós#marcos#1.99#2021-05-30#
-#Dènton#marcos#1.66#2021-05-30#
-#Anfós#marcos#1.66#2021-05-30#
-#Serrà#marcos#0.13#2021-05-30#
-#Anfós#marcos#70.66#2021-05-30#
-#Serrà#marcos#20.00#2021-05-30#
+#Corocoro#1#2.18#2021-06-01#
+#Goldfish#marcos#1.37#2021-06-01#
+#Pargo de cola amarilla#gus#1.88#2021-06-01#
+#Pargo criollo#pepe#0.95#2021-06-01#
+#Sargo chopa#xavi#2.79#2021-06-01#
+#Pez león#pepe#1.67#2021-06-01#
+#Mero rojo#pepe#5.02#2021-06-01#
+#Pargo criollo#pepe#0.58#2021-06-01#
+#Pargo criollo#pepe#0.44#2021-06-01#
+#Tilapia#marcos#11.31#2021-06-01#
+#Goldfish#marcos#1.36#2021-06-01#

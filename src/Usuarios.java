@@ -99,7 +99,6 @@ public class Usuarios {
         fw.close();
     }
     public void registrarUsuario(String path, int limite, String usuario) throws Exception {
-
         if (leer(path, limite,usuario) == -1) {
             fw = new FileWriter(path, true);
             fw.write("#" + usuario + "#" + System.lineSeparator());

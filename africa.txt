@@ -1,0 +1,7 @@
+#Late#0.56#1.00#3.00#
+#Tilapia#1.00#1.1#12.5#
+#Dichistiidae#0.02#0.80#7.8#
+#Oligolepis#0.15#0.25#2.50#
+#Sarotherodon#0.70#0.30#1.50#
+#Pulpo africanol#0.25#2.00#3.00#
+#Notopteridae#0.60#0.13#0.45#W
